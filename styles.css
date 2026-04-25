@@ -1,9 +1,17 @@
+/* ------------------------------ */
+/* Base Reset */
+/* Removes default browser spacing and normalizes box model. */
+/* ------------------------------ */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ------------------------------ */
+/* Page Layout */
+/* Centers the pricing area on a soft neutral background. */
+/* ------------------------------ */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: #f7f7f4;
@@ -14,6 +22,10 @@ body {
     padding: 20px;
 }
 
+/* ------------------------------ */
+/* Cards Row */
+/* Places cards side by side with consistent spacing. */
+/* ------------------------------ */
 .cards-container {
     display: flex;
     flex-direction: row;
@@ -23,6 +35,10 @@ body {
     align-items: flex-start;
 }
 
+/* ------------------------------ */
+/* Card Shell */
+/* Shared card frame, spacing, and fixed visual width. */
+/* ------------------------------ */
 .card {
     display: flex;
     flex-direction: column;
@@ -34,11 +50,13 @@ body {
     flex-shrink: 0;
 }
 
+/* Structural wrapper for top card content (title, price, features). */
 .card-top {
     display: flex;
     flex-direction: column;
 }
 
+/* Plan name (e.g., Hobby, Pro). */
 .card-title {
     font-size: 22px;
     line-height: 28px;
@@ -47,6 +65,7 @@ body {
     margin-bottom: 8px;
 }
 
+/* Price row with baseline alignment between amount and period. */
 .card-price {
     font-size: 20px;
     color: rgba(38, 37, 30, 0.5);
@@ -54,32 +73,38 @@ body {
     align-items: baseline;
 }
 
+/* Main price value style. */
 .card-price-amount {
     font-size: 22px;
     font-weight: 400;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Price unit style (e.g., /mo.). */
 .card-price-period {
     font-size: 14px;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Feature section spacing from heading and button. */
 .card-content {
     margin-bottom: 32px;
 }
 
+/* Intro text above feature list. */
 .includes-text {
     font-size: 16px;
     color: rgba(38, 37, 30, 0.5);
     margin: 16px 0px;
 }
 
+/* Removes default bullet style for custom checkmark list. */
 .features-list {
     list-style: none;
     padding: 0;
 }
 
+/* Single feature row: icon + text alignment. */
 .features-list li {
     display: flex;
     align-items: center;
@@ -88,6 +113,7 @@ body {
     color: #26251e;
 }
 
+/* Checkmark icon spacing and visual weight. */
 .checkmark {
     color: #26251e;
     font-size: 14px;
@@ -95,6 +121,10 @@ body {
     font-weight: 400;
 }
 
+/* ------------------------------ */
+/* Button Base */
+/* Shared button style for both card actions. */
+/* ------------------------------ */
 .download-button {
     margin-top: auto;
     width: fit-content;
@@ -109,6 +139,7 @@ body {
     transition: background-color 0.2s ease;
 }
 
+/* Neutral button hover/active state. */
 .download-button:hover {
     background-color: #D8D6CE;
 }
@@ -117,11 +148,13 @@ body {
     background-color: #D8D6CE;
 }
 
+/* Primary call-to-action variant for Pro plan. */
 .download-button.primary {
     background-color: #111;
     color: #fff;
 }
 
+/* Primary button interactive states. */
 .download-button.primary:hover {
     background-color: #333;
 }
@@ -130,6 +163,10 @@ body {
     background-color: #333;
 }
 
+/* ------------------------------ */
+/* Floating Label */
+/* Fixed note at top center identifying this page variant. */
+/* ------------------------------ */
 .page-label {
     position: fixed;
     top: 16px;
@@ -143,6 +180,7 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
+/* Emphasized text inside floating label. */
 .page-label strong {
     color: #333;
 }
