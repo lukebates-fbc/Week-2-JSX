@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta: character encoding and responsive viewport setup -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Document title shown in the browser tab -->
     <title>Pricing Plans — HTML version</title>
+
+    <!-- External font loading (Google Fonts: Inter) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Project stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Small top label to indicate this static HTML variant -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+
+    <!-- Pricing cards wrapper -->
     <div class="cards-container">
+        <!-- Card 1: Hobby plan -->
         <div class="card">
+            <!-- Card header and feature summary -->
             <div class="card-top">
                 <h3 class="card-title">Hobby</h3>
                 <p class="card-price">
                     <span class="card-price-amount">Free</span>
                 </p>
+
+                <!-- Plan include list -->
                 <div class="card-content">
                     <p class="includes-text">Includes:</p>
                     <ul class="features-list">
@@ -36,15 +50,21 @@
                     </ul>
                 </div>
             </div>
+            <!-- Plan action -->
             <button class="download-button secondary">Download</button>
         </div>
+
+        <!-- Card 2: Pro plan -->
         <div class="card">
+            <!-- Card header and feature summary -->
             <div class="card-top">
                 <h3 class="card-title">Pro</h3>
                 <p class="card-price">
                     <span class="card-price-amount">$20</span>
                     <span class="card-price-period">/mo.</span>
                 </p>
+
+                <!-- Plan include list -->
                 <div class="card-content">
                     <p class="includes-text">Everything in Hobby, plus:</p>
                     <ul class="features-list">
@@ -67,7 +87,44 @@
                     </ul>
                 </div>
             </div>
+            <!-- Primary conversion action -->
             <button class="download-button primary">Get Pro</button>
+        </div>
+
+        <!-- Card 3: Enterprise plan -->
+        <div class="card">
+            <!-- Card header and feature summary -->
+            <div class="card-top">
+                <h3 class="card-title">Enterprise</h3>
+                <p class="card-price">
+                    <span class="card-price-amount">Custom</span>
+                </p>
+
+                <!-- Plan include list -->
+                <div class="card-content">
+                    <p class="includes-text">Everything in Pro, plus:</p>
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Dedicated account manager
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Priority support
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Team usage analytics
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Advanced security controls
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Enterprise conversion action -->
+            <button class="download-button primary">Contact Sales</button>
         </div>
     </div>
 </body>
